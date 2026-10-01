@@ -1,1 +1,0 @@
-"""CodemieCaps SDLC workflow application."""
