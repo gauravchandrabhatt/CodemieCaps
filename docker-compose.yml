@@ -1,0 +1,12 @@
+services:
+  codemiecaps:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      CODIEMIE_DATABASE_URL: sqlite:////data/codemiecaps.db
+    volumes:
+      - codemiecaps-data:/data
+    restart: unless-stopped
+volumes:
+  codemiecaps-data:
